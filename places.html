@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore – Travel Buddy</title>
+    <link rel="stylesheet" href="places.css">
+</head>
+<body>
+
+<header class="top-header">
+    <h1 class="page-title">Explore India</h1>
+    <p class="subtitle">Find destinations, cities, states & attractions</p>
+</header>
+
+<section class="categories">
+    <button class="category active" data-filter="cities">Cities</button>
+    <button class="category" data-filter="states">States</button>
+    <button class="category" data-filter="beaches">Beaches</button>
+    <button class="category" data-filter="nature">Nature</button>
+    <button class="category" data-filter="heritage">Heritage</button>
+</section>
+
+<!-- Dynamic content container -->
+<section class="cards-container" id="cardsContainer"></section>
+
+<!-- Back button -->
+<button id="backBtn" class="back-btn" style="display:none">⬅ Back</button>
+
+<script src="places.js"></script>
+</body>
+</html>
