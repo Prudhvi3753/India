@@ -3,36 +3,36 @@ const data = {
     /* -----------------------  CITIES  ----------------------- */
     cities: {
         Hyderabad: {
-            img: "../img/charminar.jpg",
+            img: "img/charminar.jpg",
             places: [
-                { name: "Charminar", img: "../img/charminar.jpg" },
-                { name: "Golconda Fort", img: "../img/golconda.jpeg" },
-                { name: "Hussain Sagar", img: "../img/hussan.jpg" },
-                { name: "Birla Mandir", img: "../img/birla.jpg" }
+                { name: "Charminar", img: "img/charminar.jpg" },
+                { name: "Golconda Fort", img: "img/golconda.jpeg" },
+                { name: "Hussain Sagar", img: "img/hussan.jpg" },
+                { name: "Birla Mandir", img: "img/birla.jpg" }
             ]
         },
         Chennai: {
-            img: "../img/chennai.jpg",
+            img: "img/chennai.jpg",
             places: [
-                { name: "Marina Beach", img: "../img/marina.jpg" },
-                { name: "Kapaleeshwarar Temple", img: "../img/kapaleeshwar.jpg" },
-                { name: "Valluvar Kottam", img: "../img/valluvar.jpeg" }
+                { name: "Marina Beach", img: "img/marina.jpg" },
+                { name: "Kapaleeshwarar Temple", img: "img/kapaleeshwar.jpg" },
+                { name: "Valluvar Kottam", img: "img/valluvar.jpeg" }
             ]
         },
         Mumbai: {
-            img: "../img/mumbai.jpg",
+            img: "img/mumbai.jpg",
             places: [
-                { name: "Gateway of India", img: "../img/delhi.jpg" },
-                { name: "Marine Drive", img: "../img/marina.jpg" },
-                { name: "Elephanta Caves", img: "../img/elephant.jpeg" }
+                { name: "Gateway of India", img: "img/delhi.jpg" },
+                { name: "Marine Drive", img: "img/marina.jpg" },
+                { name: "Elephanta Caves", img: "img/elephant.jpeg" }
             ]
         },
         Delhi: {
-            img: "../img/delhi.jpg",
+            img: "img/delhi.jpg",
             places: [
-                { name: "India Gate", img: "../img/delhi.jpg" },
-                { name: "Red Fort", img: "../img/redfort.jpeg" },
-                { name: "Qutub Minar", img: "../img/qutub.jpeg" }
+                { name: "India Gate", img: "img/delhi.jpg" },
+                { name: "Red Fort", img: "img/redfort.jpeg" },
+                { name: "Qutub Minar", img: "img/qutub.jpeg" }
             ]
         }
     },
