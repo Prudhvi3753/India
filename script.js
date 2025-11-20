@@ -22,7 +22,7 @@ function prevImage() {
     carouselImage.src = images[currentIndex];
 }
 */
-document.getElementById("getWeatherBtn").addEventListener("click", function() {
+/*document.getElementById("getWeatherBtn").addEventListener("click", function() {
     const city = document.getElementById("cityInput").value;
     const apiKey = "a0c05968d95bd7758b639a44b774f741"; 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -60,3 +60,11 @@ function changeSlide(direction) {
     carouselImage.src = destinations[index].image;
     carouselTitle.textContent = destinations[index].name;
 }
+*/
+
+
+document.getElementById("menu-icon").addEventListener("click", function() {
+    document.getElementById("menu").classList.toggle("active");
+});
+
+

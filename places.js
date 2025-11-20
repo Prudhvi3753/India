@@ -1,6 +1,5 @@
 const data = {
 
-    /* -----------------------  CITIES  ----------------------- */
     cities: {
         Hyderabad: {
             img: "img/charminar.jpg",
@@ -37,88 +36,84 @@ const data = {
         }
     },
 
-    /* -----------------------  STATES  ----------------------- */
     states: {
         Kerala: {
-            img: "https://source.unsplash.com/800x600/?kerala",
+            img: "img/kerala.jpeg",
             places: [
-                { name: "Alleppey", img: "https://source.unsplash.com/800x600/?alleppey" },
-                { name: "Munnar", img: "https://source.unsplash.com/800x600/?munnar" },
-                { name: "Kumarakom", img: "https://source.unsplash.com/800x600/?kumarakom" }
+                { name: "Alleppey", img: "img/Alleppey.jpg" },
+                { name: "Munnar", img: "img/munnar.jpeg" },
+                { name: "Kumarakom", img: "img/kumarakom.jpeg" }
             ]
         },
         Rajasthan: {
-            img: "https://source.unsplash.com/800x600/?rajasthan",
+            img: "img/rajasthan.jpeg",
             places: [
-                { name: "Jaipur", img: "https://source.unsplash.com/800x600/?jaipur" },
-                { name: "Udaipur", img: "https://source.unsplash.com/800x600/?udaipur" },
-                { name: "Jodhpur", img: "https://source.unsplash.com/800x600/?jodhpur" }
+                { name: "Jaipur", img: "img/jaipur.jpeg" },
+                { name: "Udaipur", img: "img/udaipur.jpeg" },
+                { name: "Jodhpur", img: "img/jodhpur.jpeg" }
             ]
         },
         Goa: {
-            img: "https://source.unsplash.com/800x600/?goa",
+            img: "img/goa.jpeg",
             places: [
-                { name: "Calangute Beach", img: "https://source.unsplash.com/800x600/?calangute" },
-                { name: "Baga Beach", img: "https://source.unsplash.com/800x600/?baga-beach" },
-                { name: "Old Goa Churches", img: "https://source.unsplash.com/800x600/?old-goa" }
+                { name: "Calangute Beach", img: "img/calanguta.jpeg" },
+                { name: "Baga Beach", img: "img/baga.jpeg" },
+                { name: "Old Goa Churches", img: "img/church.jpeg" }
             ]
         }
     },
 
-    /* -----------------------  BEACHES  ----------------------- */
     beaches: {
         Goa: {
-            img: "https://source.unsplash.com/800x600/?goa-beach",
+            img: "img/goa.jpeg",
             places: [
-                { name: "Baga Beach", img: "https://source.unsplash.com/800x600/?baga" },
-                { name: "Candolim Beach", img: "https://source.unsplash.com/800x600/?candolim" },
-                { name: "Anjuna Beach", img: "https://source.unsplash.com/800x600/?anjuna" }
+                { name: "Baga Beach", img: "img/baga.jpeg" },
+                { name: "Candolim Beach", img: "img/candolim.jpeg" },
+                { name: "Anjuna Beach", img: "img/anjuna.jpeg" }
             ]
         },
         Gokarna: {
-            img: "https://source.unsplash.com/800x600/?gokarna,beach",
+            img: "img/rokarna.jpeg",
             places: [
-                { name: "Om Beach", img: "https://source.unsplash.com/800x600/?om-beach" },
-                { name: "Kudle Beach", img: "https://source.unsplash.com/800x600/?kudle-beach" },
-                { name: "Paradise Beach", img: "https://source.unsplash.com/800x600/?paradise-beach" }
+                { name: "Om Beach", img: "img/om.jpeg" },
+                { name: "Kudle Beach", img: "img/kundal.jpeg" },
+                { name: "Paradise Beach", img: "img/paradise.jpeg" }
             ]
         }
     },
 
-    /* -----------------------  NATURE  ----------------------- */
     nature: {
         Munnar: {
-            img: "https://source.unsplash.com/800x600/?munnar,tea",
+            img: "img/munnar.jpeg",
             places: [
-                { name: "Top Station", img: "https://source.unsplash.com/800x600/?top-station" },
-                { name: "Tea Gardens", img: "https://source.unsplash.com/800x600/?tea-garden" },
-                { name: "Eravikulam National Park", img: "https://source.unsplash.com/800x600/?eravikulam" }
+                { name: "Top Station", img: "img/top.jpeg" },
+                { name: "Tea Gardens", img: "img/tea.jpeg" },
+                { name: "Eravikulam National Park", img: "img/park.jpeg" }
             ]
         },
         Himalayas: {
-            img: "https://source.unsplash.com/800x600/?himalayas",
+            img: "img/himalayas.jpeg",
             places: [
-                { name: "Manali", img: "https://source.unsplash.com/800x600/?manali" },
-                { name: "Shimla", img: "https://source.unsplash.com/800x600/?shimla" },
-                { name: "Dharamshala", img: "https://source.unsplash.com/800x600/?dharamshala" }
+                { name: "Manali", img: "img/manali.jpeg" },
+                { name: "Shimla", img: "img/shimla.jpeg" },
+                { name: "Dharamshala", img: "img/dharm.jpeg" }
             ]
         }
     },
 
-    /* -----------------------  HERITAGE  ----------------------- */
     heritage: {
         "Taj Mahal": {
-            img: "https://source.unsplash.com/800x600/?tajmahal",
+            img: "img/taj.jpeg",
             places: [
-                { name: "Taj Museum", img: "https://source.unsplash.com/800x600/?taj-museum" },
-                { name: "Agra Fort", img: "https://source.unsplash.com/800x600/?agra-fort" }
+                { name: "Taj Museum", img: "img/museum.jpeg" },
+                { name: "Agra Fort", img: "img/agra.jpeg" }
             ]
         },
         Hampi: {
-            img: "https://source.unsplash.com/800x600/?hampi",
+            img: "img/humpi.jpeg",
             places: [
-                { name: "Virupaksha Temple", img: "https://source.unsplash.com/800x600/?virupaksha" },
-                { name: "Vittala Temple", img: "https://source.unsplash.com/800x600/?vittala-temple" }
+                { name: "Virupaksha Temple", img: "img/virupaksha.jpeg" },
+                { name: "Vittala Temple", img: "img/vittala.jpeg" }
             ]
         }
     }
@@ -132,7 +127,6 @@ let selectedItem = "";
 const cardsContainer = document.getElementById("cardsContainer");
 const backBtn = document.getElementById("backBtn");
 
-/* -------- LEVEL 1: Load category items (Cities / States / etc.) -------- */
 function loadSubItems(category) {
     currentLevel = "sub";
     selectedCategory = category;
@@ -147,7 +141,6 @@ function loadSubItems(category) {
     }
 }
 
-/* -------- LEVEL 2: Load places inside selected city/state -------- */
 function loadPlaces(itemName) {
     currentLevel = "places";
     selectedItem = itemName;
@@ -162,7 +155,6 @@ function loadPlaces(itemName) {
     });
 }
 
-/* -------- Create Card Component -------- */
 function createCard(name, img) {
     const card = document.createElement("div");
     card.className = "card";
@@ -182,8 +174,6 @@ function createCard(name, img) {
 
     cardsContainer.appendChild(card);
 }
-
-/* -------- Category Buttons -------- */
 document.querySelectorAll(".category").forEach(btn => {
     btn.addEventListener("click", () => {
         document.querySelector(".category.active").classList.remove("active");
@@ -194,12 +184,10 @@ document.querySelectorAll(".category").forEach(btn => {
     });
 });
 
-/* -------- BACK BUTTON -------- */
 backBtn.addEventListener("click", () => {
     if (currentLevel === "places") {
         loadSubItems(selectedCategory);
     }
 });
 
-/* Default Load */
 loadSubItems("cities");

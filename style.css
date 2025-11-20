@@ -69,3 +69,40 @@ footer p {
     margin: 0;
 }
 
+#menu-icon {
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+        z-index: 1000;
+    }
+
+    #menu {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 220px;
+        height: 100%;
+        background: white;
+        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s ease-in-out;
+    }
+
+    #menu a {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    #menu.active {
+        right: 0;
+    }
+}
+
