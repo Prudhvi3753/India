@@ -63,7 +63,7 @@ function changeSlide(direction) {
 */
 
 
-document.getElementById("menu-icon").addEventListener("click", function() {
+/*document.getElementById("menu-icon").addEventListener("click", function() {
     document.getElementById("menu").classList.toggle("active");
 });
 document.getElementById("menu-icon").addEventListener("click", function() {
@@ -72,6 +72,19 @@ document.getElementById("menu-icon").addEventListener("click", function() {
 
 document.getElementById("close-btn").addEventListener("click", function() {
     document.getElementById("menu").classList.remove("active");
+});*/
+
+const menu = document.getElementById("menu");
+const openBtn = document.getElementById("menu-icon");
+const closeBtn = document.getElementById("close-btn");
+
+openBtn.addEventListener("click", function() {
+    menu.classList.add("active");
 });
+
+closeBtn.addEventListener("click", function() {
+    menu.classList.remove("active");
+});
+
 
 
