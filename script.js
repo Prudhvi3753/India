@@ -66,5 +66,12 @@ function changeSlide(direction) {
 document.getElementById("menu-icon").addEventListener("click", function() {
     document.getElementById("menu").classList.toggle("active");
 });
+document.getElementById("menu-icon").addEventListener("click", function() {
+    document.getElementById("menu").classList.add("active");
+});
+
+document.getElementById("close-btn").addEventListener("click", function() {
+    document.getElementById("menu").classList.remove("active");
+});
 
 
