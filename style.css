@@ -20,6 +20,14 @@ header h1{
     margin: 0;
     font-size: 28px;
 }
+#menu {
+    z-index: 9999;   /* ADD THIS */
+}
+
+#menu a {
+    color: black;    /* ADD THIS (in case text is white) */
+}
+
 
 #menu a {
     margin-left: 20px;
