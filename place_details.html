@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Details</title>
+    <link rel="stylesheet" href="place-details.css">
+</head>
+<body>
+
+    <h1 id="placeName">Loading...</h1>
+
+    <!-- MAP -->
+    <section>
+        <h2>📍 Location Map</h2>
+        <iframe id="mapFrame"
+            width="100%" 
+            height="400" 
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- WEATHER -->
+    <section>
+        <h2>🌦 Weather</h2>
+        <div id="weatherBox">Loading weather...</div>
+    </section>
+
+    <!-- DESCRIPTION -->
+    <section>
+        <h2>📘 Description</h2>
+        <p id="descriptionBox">Loading description...</p>
+    </section>
+
+<script src="place-details.js"></script>
+<!-- your page content -->
+
+
+<!-- WEATHER SCRIPT HERE -->
+<script>
+
+// ---- Place List ----
+const places = {
+    vizag: { lat: 17.6868, lon: 83.2185 },
+    hyderabad: { lat: 17.3850, lon: 78.4867 },
+    vijayawada: { lat: 16.5062, lon: 80.6480 },
+    tirupati: { lat: 13.6288, lon: 79.4192 }
+};
+
+const apiKey = "a0c05968d95bd7758b639a44b774f741";
+
+const urlParams = new URLSearchParams(window.location.search);
+const selectedPlace = urlParams.get("place");
+
+const tempEl = document.getElementById("temp");
+const descEl = document.getElementById("description");
+
+tempEl.innerText = "Loading...";
+descEl.innerText = "Loading...";
+
+async function loadWeather() {
+    if (!selectedPlace || !places[selectedPlace]) {
+        tempEl.innerText = "Error";
+        descEl.innerText = "Place not found";
+        return;
+    }
+
+    const { lat, lon } = places[selectedPlace];
+
+    const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (!data.main) {
+            tempEl.innerText = "Error";
+            descEl.innerText = data.message;
+            return;
+        }
+
+        tempEl.innerText = data.main.temp + "°C";
+        descEl.innerText = data.weather[0].description;
+
+    } catch (error) {
+        tempEl.innerText = "Error";
+        descEl.innerText = "Failed to load weather";
+    }
+}
+
+loadWeather();
+
+// ---- Google Map (Free version, no API key) ----
+document.getElementById("mapFrame").src =
+    `https://www.google.com/maps?q=${encodeURIComponent(place)}&output=embed`;
+
+
+</script>
+
+</body>
+</html>
+

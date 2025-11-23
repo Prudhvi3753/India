@@ -78,6 +78,55 @@ header h1{
     border-radius: 10px;
 }
 
+/* Popular Places Section */
+#popular-places {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f1f5f9;
+}
+
+#popular-places h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #1e3c72;
+}
+
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.place-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.place-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.place-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+
 footer {
     background-color: #222;
     color: #fff;
@@ -127,4 +176,123 @@ footer p {
         right: 0;
     }
 }
+
+
+/* contact */
+
+/* Contact Section */
+#contact-section {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#contact-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1e3c72;
+}
+
+#contact-section p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #1e3c72;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 60, 114, 0.2);
+}
+
+.contact-form button {
+    padding: 14px;
+    background: #1e3c72;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #16305b;
+    transform: translateY(-2px);
+}
+
+/* THINGS TO DO SECTION */
+#things-to-do {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#things-to-do h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #1e3c72;
+    font-weight: 700;
+}
+
+.things-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+}
+
+.thing-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.thing-card:hover {
+    transform: translateY(-8px);
+}
+
+.thing-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.thing-card h3 {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
 

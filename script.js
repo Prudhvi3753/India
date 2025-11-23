@@ -74,6 +74,14 @@ document.getElementById("close-btn").addEventListener("click", function() {
     document.getElementById("menu").classList.remove("active");
 });*/
 
+
+document.querySelectorAll(".place-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const place = card.querySelector("h3").innerText.split("–")[0].trim();
+        window.location.href = `place_details.html?place=${encodeURIComponent(place)}`;
+    });
+});
+
 const menu = document.getElementById("menu");
 const openBtn = document.getElementById("menu-icon");
 const closeBtn = document.getElementById("close-btn");

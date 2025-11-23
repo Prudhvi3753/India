@@ -169,6 +169,8 @@ function createCard(name, img) {
             loadSubItems(name);
         } else if (currentLevel === "sub") {
             loadPlaces(name);
+        } else if (currentLevel === "places") {
+            window.location.href = `place_details.html?place=${encodeURIComponent(name)}`;
         }
     });
 

@@ -1,0 +1,85 @@
+/* ----------- Global Styles ----------- */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef2f3;
+    color: #333;
+}
+
+/* ----------- Header ----------- */
+header {
+    background: linear-gradient(135deg, #0052D4, #4364F7, #6FB1FC);
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+header h1 {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* ----------- Section Headings ----------- */
+section h2 {
+    color: #003B8E;
+    margin-bottom: 10px;
+    font-size: 22px;
+    border-left: 4px solid #003B8E;
+    padding-left: 10px;
+}
+
+/* ----------- Info Cards ----------- */
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ----------- Google Map ----------- */
+#mapFrame {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ----------- Weather Box ----------- */
+#weatherBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+}
+
+#weatherBox p {
+    margin: 0;
+}
+
+/* ----------- Description Box ----------- */
+#descriptionBox {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* ----------- Footer ----------- */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    color: #555;
+    font-size: 14px;
+    margin-top: 20px;
+}
